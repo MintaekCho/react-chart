@@ -1,4 +1,3 @@
-
 import {
   Chart,
   CategoryScale,
@@ -34,8 +33,8 @@ export const options = {
   },
 };
 
-const dataList_1 = [4, 20, 1, 3, 10, 13, 5];
-const dataList_2 = [5, 8, 2, 4, 12, 15, 7];
+const red = [4, 20, 1, 3, 10, 13, 5];
+const blue = [5, 8, 2, 4, 12, 15, 7];
 
 const labels = ["January", "February", "March", "April", "May", "June", "July"];
 
@@ -44,13 +43,13 @@ export const data = {
   datasets: [
     {
       label: "부엉이",
-      data: dataList_1.map((data) => data),
+      data: red.map((data) => data),
       borderColor: "rgb(255, 99, 132)",
       backgroundColor: "rgba(255, 99, 132, 0.5)",
     },
     {
       label: "올빼미",
-      data: dataList_2.map((data) => data),
+      data: blue.map((data) => data),
       borderColor: "rgb(53, 162, 235)",
       backgroundColor: "rgba(53, 162, 235, 0.5)",
     },
